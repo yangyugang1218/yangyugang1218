@@ -637,18 +637,12 @@ if (savedLang === 'zh') {
 renderCards('all');
 initDonut();
 
-// Load China GeoJSON from DataV (Alibaba Cloud)
-fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json')
+// Load China GeoJSON locally (bundled with site)
+fetch('./china.json')
   .then(r => r.json())
   .then(geoJson => initMap(geoJson))
   .catch(() => {
-    // Fallback: try jsdelivr
-    fetch('https://cdn.jsdelivr.net/npm/echarts@5.4.3/map/json/china.json')
-      .then(r => r.json())
-      .then(geoJson => initMap(geoJson))
-      .catch(() => {
-        document.getElementById('china-map').innerHTML = '<p style="text-align:center;padding:4rem;color:#8899aa">Map unavailable offline. Connect to internet to load province boundaries.</p>';
-      });
+    document.getElementById('china-map').innerHTML = '<p style="text-align:center;padding:4rem;color:#8899aa">地图数据加载失败 / Map data unavailable.</p>';
   });
 </script>
 </body>
