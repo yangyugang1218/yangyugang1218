@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yugang Yang | Renmin University of China</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ===== TOP NAV ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand" data-en="Yugang Yang" data-zh="杨玉刚">Yugang Yang</span>
+    <div class="nav-tabs" id="nav-tabs">
+      <a href="#about"        data-en="About"             data-zh="关于">About</a>
+      <a href="#education"    data-en="Education"         data-zh="教育背景">Education</a>
+      <a href="#publications" data-en="Publications"      data-zh="学术成果">Publications</a>
+      <a href="#projects"     data-en="Projects"          data-zh="科研项目">Projects</a>
+      <a href="#electricity"  data-en="Electricity"       data-zh="电力市场">Electricity</a>
+      <a href="#awards"       data-en="Awards"            data-zh="荣誉奖励">Awards</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button id="btn-en" class="lang-btn active" onclick="setLang('en')">EN</button>
+        <button id="btn-zh" class="lang-btn"        onclick="setLang('zh')">中文</button>
+      </div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== TWO-COLUMN LAYOUT ===== -->
+<div class="layout">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="profile-wrap">
+      <img src="photo.jpg" alt="Yugang Yang" class="profile-photo"/>
+      <h1 class="profile-name lang-en">Yugang Yang</h1>
+      <h1 class="profile-name lang-zh" style="display:none">杨玉刚</h1>
+      <p class="profile-title lang-en">PhD Candidate</p>
+      <p class="profile-title lang-zh" style="display:none">博士研究生（硕博连读）</p>
+      <p class="profile-dept lang-en">Energy Economics</p>
+      <p class="profile-dept lang-zh" style="display:none">能源经济学</p>
+      <p class="profile-affil lang-en">School of Applied Economics<br>Renmin University of China</p>
+      <p class="profile-affil lang-zh" style="display:none">中国人民大学<br>应用经济学院</p>
+    </div>
+
+    <div class="sidebar-links">
+      <a href="mailto:yugangyang@ruc.edu.cn" class="slink">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        yugangyang@ruc.edu.cn
+      </a>
+      <a href="tel:+8615987479201" class="slink">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 11.89 11.89 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 5.5 5.5l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +86-159-8747-9201
+      </a>
+      <a href="../个人简历/Yugang_Yang_CV.pdf" target="_blank" class="slink cv-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <span data-en="Download CV" data-zh="下载简历">Download CV</span>
+      </a>
+    </div>
+
+    <div class="sidebar-section">
+      <h4 class="sidebar-heading" data-en="Research Interests" data-zh="研究方向">Research Interests</h4>
+      <ul class="interest-list lang-en">
+        <li>Electricity Market Design</li>
+        <li>Low-Carbon Development</li>
+        <li>New Energy Industrial Policy</li>
+        <li>International Energy Trade</li>
+      </ul>
+      <ul class="interest-list lang-zh" style="display:none">
+        <li>电力市场设计</li>
+        <li>低碳发展</li>
+        <li>新能源产业政策</li>
+        <li>国际能源贸易</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h4 class="sidebar-heading" data-en="Skills" data-zh="编程技能">Skills</h4>
+      <p class="skills-text">Stata &nbsp;·&nbsp; Python &nbsp;·&nbsp; MATLAB &nbsp;·&nbsp; LaTeX</p>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="sec-title" data-en="About" data-zh="关于">About</h2>
+      <p class="lang-en about-text">
+        I am a PhD candidate (combined Master–PhD) at the School of Applied Economics,
+        <strong>Renmin University of China (RUC)</strong>.
+        My research lies at the intersection of <strong>energy industry policy</strong> and
+        <strong>low-carbon development</strong>, focusing on electricity market design,
+        new energy industrial policy, and China's energy transition.
+        I have published in <em>Energy Policy</em>, <em>Energy Economics</em>, and
+        <em>Economics and Human Biology</em>.
+      </p>
+      <p class="lang-zh about-text" style="display:none">
+        本人就读于<strong>中国人民大学应用经济学院</strong>，能源经济学专业（硕博连读，保研直博）。
+        研究聚焦于<strong>能源产业政策</strong>与<strong>低碳发展</strong>，
+        重点方向包括电力市场设计、新能源产业政策及中国能源转型。
+        已在 <em>Energy Policy</em>、<em>Energy Economics</em>、<em>Economics and Human Biology</em> 等期刊发表成果。
+      </p>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-num">5</span>
+          <span class="stat-label" data-en="Publications" data-zh="发表论文">Publications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label" data-en="NSFC Projects" data-zh="国自科项目">NSFC Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3.94</span>
+          <span class="stat-label" data-en="GPA / 4.00" data-zh="绩点 4.00">GPA / 4.00</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">#1/65</span>
+          <span class="stat-label" data-en="Class Rank" data-zh="班级排名">Class Rank</span>
+        </div>
+      </div>
+
+      <!-- News box -->
+      <div class="news-box">
+        <h4 class="news-title" data-en="News" data-zh="动态">News</h4>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">2025.04</span>
+            <span class="lang-en">Paper accepted in <em>Energy Policy</em> (SCI/SSCI Q1) — Carbon literacy and NEV purchase analysis.</span>
+            <span class="lang-zh" style="display:none"><em>Energy Policy</em>（SCI/SSCI Q1）录用 — 碳素养与新能源汽车购买行为研究。</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025.03</span>
+            <span class="lang-en">Paper accepted in <em>Economics and Human Biology</em> — Long-term impact of natural disasters on social trust.</span>
+            <span class="lang-zh" style="display:none"><em>Economics and Human Biology</em> 录用 — 自然灾害对社会信任的长期影响。</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025.01</span>
+            <span class="lang-en">Paper forthcoming in <em>宏观经济管理</em> (CSSCI) — Fertility support policy international experience.</span>
+            <span class="lang-zh" style="display:none"><em>宏观经济管理</em>（CSSCI）即将刊出 — 国外生育支持政策经验与启示。</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025</span>
+            <span class="lang-en">Joined NSFC project (72574221) on new energy industry chain resilience under trade friction.</span>
+            <span class="lang-zh" style="display:none">参与国自科重点项目（72574221）：贸易摩擦下新能源产业链韧性研究。</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2023.10</span>
+            <span class="lang-en">Presented at the International Conference on Climate and Energy Finance.</span>
+            <span class="lang-zh" style="display:none">在气候与能源金融国际会议上汇报研究成果。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="sec-title" data-en="Education" data-zh="教育背景">Education</h2>
+
+      <div class="lang-en">
+        <div class="edu-entry">
+          <div class="edu-body">
+            <p class="edu-school">Renmin University of China (RUC)</p>
+            <p class="edu-degree">Ph.D. Candidate, Energy Economics <span class="edu-tag">Combined Master–PhD</span></p>
+            <p class="edu-meta">School of Applied Economics &nbsp;·&nbsp; GPA: 3.94/4.00 &nbsp;·&nbsp; Rank: 1/65</p>
+          </div>
+          <span class="edu-date">Sep. 2023 – Present</span>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-body">
+            <p class="edu-school">Renmin University of China (RUC)</p>
+            <p class="edu-degree">B.Sc., National Economics Management <span class="edu-tag">+ Energy Economics (Minor)</span></p>
+            <p class="edu-meta">School of Applied Economics &nbsp;·&nbsp; GPA: 3.79/4.00 &nbsp;·&nbsp; Rank: 6/44</p>
+          </div>
+          <span class="edu-date">Sep. 2019 – Jun. 2023</span>
+        </div>
+      </div>
+
+      <div class="lang-zh" style="display:none">
+        <div class="edu-entry">
+          <div class="edu-body">
+            <p class="edu-school">中国人民大学</p>
+            <p class="edu-degree">能源经济学 博士研究生 <span class="edu-tag">硕博连读</span></p>
+            <p class="edu-meta">应用经济学院 &nbsp;·&nbsp; 绩点：3.94/4.00 &nbsp;·&nbsp; 班级排名：1/65</p>
+          </div>
+          <span class="edu-date">2023.9 – 至今</span>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-body">
+            <p class="edu-school">中国人民大学</p>
+            <p class="edu-degree">国民经济管理（主修）学士 <span class="edu-tag">能源经济学辅修</span></p>
+            <p class="edu-meta">应用经济学院 &nbsp;·&nbsp; 绩点：3.79/4.00 &nbsp;·&nbsp; 年级排名：6/44</p>
+          </div>
+          <span class="edu-date">2019.9 – 2023.6</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2 class="sec-title" data-en="Publications" data-zh="学术成果">Publications</h2>
+      <p class="sec-note lang-en">* Corresponding author &nbsp;·&nbsp; <strong>Bold</strong> = Yugang Yang</p>
+      <p class="sec-note lang-zh" style="display:none">* 通讯作者 &nbsp;·&nbsp; <strong>粗体</strong> = 杨玉刚</p>
+
+      <!-- Journal Articles EN -->
+      <div class="lang-en">
+        <h3 class="pub-group-title">Journal Articles</h3>
+        <ol class="pub-list" reversed>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-ep">Energy<br>Policy</div>
+            <div class="pub-main">
+              <p class="pub-title">Carbon literacy, switching cost, and consumer choice: Evidence from the new energy vehicle purchase analysis.</p>
+              <p class="pub-meta">Yang Liu, <strong>Yugang Yang*</strong> &nbsp;·&nbsp; <em>Energy Policy</em>, 2025, 198: 114478
+                &nbsp;·&nbsp; <span class="tag-journal">SCI/SSCI Q1</span> <span class="tag-role tag-corr">Corresponding Author</span>
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.enpol.2024.114478" target="_blank">DOI</a>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-hgjj">宏观<br>经管</div>
+            <div class="pub-main">
+              <p class="pub-title">International experience, issues, and implications of fertility support policies in response to population change.</p>
+              <p class="pub-meta">Hongru Wang, Jin Huang, <strong>Yugang Yang</strong> &nbsp;·&nbsp; <em>宏观经济管理</em>, 2025 (Forthcoming)
+                &nbsp;·&nbsp; <span class="tag-journal">CSSCI</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-ehb">Econ<br>&amp;<br>H.Bio</div>
+            <div class="pub-main">
+              <p class="pub-title">The Lingering Shadow: Understanding the Long-Term Impact of Natural Disasters on Social Trust.</p>
+              <p class="pub-meta">Xiaokun Yu, Yang Liu, <strong>Yugang Yang*</strong> &nbsp;·&nbsp; <em>Economics and Human Biology</em> (Accepted)
+                &nbsp;·&nbsp; <span class="tag-role tag-corr">Corresponding Author</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-ee">Energy<br>Econ</div>
+            <div class="pub-main">
+              <p class="pub-title">International energy trade and inflation dynamics: The role of invoicing currency use during the low carbon transition.</p>
+              <p class="pub-meta">Qiao Hao, Peng Qin, <strong>Yugang Yang*</strong> &nbsp;·&nbsp; <em>Energy Economics</em>, 2023, 128: 107178
+                &nbsp;·&nbsp; <span class="tag-journal">SCI/SSCI Q1</span> <span class="tag-role tag-main">Main Author</span>
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.eneco.2023.107178" target="_blank">DOI</a>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-gjjr">国际<br>金融</div>
+            <div class="pub-main">
+              <p class="pub-title">China's Energy Pricing Power under the Great Transformation of International Energy.</p>
+              <p class="pub-meta">Yang Liu, <strong>Yugang Yang*</strong>, Liyan Han &nbsp;·&nbsp; <em>国际金融</em>, 2023(05): 24–27
+                &nbsp;·&nbsp; <span class="tag-journal">AMI</span> <span class="tag-role tag-main">Main Author</span>
+              </p>
+            </div>
+          </li>
+
+        </ol>
+
+        <h3 class="pub-group-title" style="margin-top:1.5rem">Working Papers</h3>
+        <ol class="pub-list">
+          <li class="pub-entry">
+            <div class="pub-main">
+              <p class="pub-title">Flexible Industry Policy under Political Incentives: the Hidden Cost of the Financial Crisis.</p>
+              <p class="pub-meta">Yang Liu, Lei Li, <strong>Yugang Yang*</strong> &nbsp;·&nbsp; <span class="tag-role tag-corr">Corresponding Author</span></p>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-main">
+              <p class="pub-title">Market-Oriented Reform, Industrial Policy, and Renewable Energy Development.</p>
+              <p class="pub-meta">Yang Liu, <strong>Yugang Yang*</strong> &nbsp;·&nbsp; <span class="tag-role tag-corr">Corresponding Author</span></p>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-main">
+              <p class="pub-title">Financial Crisis, Environmental Pollution, and Economic Growth.</p>
+              <p class="pub-meta">Lei Li, Yang Liu, <strong>Yugang Yang</strong></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Journal Articles ZH -->
+      <div class="lang-zh" style="display:none">
+        <h3 class="pub-group-title">已发表论文</h3>
+        <ol class="pub-list" reversed>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-ep">Energy<br>Policy</div>
+            <div class="pub-main">
+              <p class="pub-title">Carbon literacy, switching cost, and consumer choice: Evidence from the new energy vehicle purchase analysis.</p>
+              <p class="pub-meta">刘阳, <strong>杨玉刚*</strong> &nbsp;·&nbsp; <em>Energy Policy</em>, 2025, 198: 114478
+                &nbsp;·&nbsp; <span class="tag-journal">SCI/SSCI Q1</span> <span class="tag-role tag-corr">通讯作者</span>
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.enpol.2024.114478" target="_blank">DOI</a>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-hgjj">宏观<br>经管</div>
+            <div class="pub-main">
+              <p class="pub-title">国外应对人口变化的生育支持政策经验、问题和启示.</p>
+              <p class="pub-meta">王鸿儒, 黄进, <strong>杨玉刚</strong> &nbsp;·&nbsp; <em>宏观经济管理</em>, 2025（即将刊出）
+                &nbsp;·&nbsp; <span class="tag-journal">CSSCI</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-ehb">Econ<br>&amp;<br>H.Bio</div>
+            <div class="pub-main">
+              <p class="pub-title">The Lingering Shadow: Understanding the Long-Term Impact of Natural Disasters on Social Trust.</p>
+              <p class="pub-meta">余晓坤, 刘阳, <strong>杨玉刚*</strong> &nbsp;·&nbsp; <em>Economics and Human Biology</em>（已录用）
+                &nbsp;·&nbsp; <span class="tag-role tag-corr">通讯作者</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-ee">Energy<br>Econ</div>
+            <div class="pub-main">
+              <p class="pub-title">International energy trade and inflation dynamics: The role of invoicing currency use during the low carbon transition.</p>
+              <p class="pub-meta">郝乔, 秦鹏, <strong>杨玉刚*</strong> &nbsp;·&nbsp; <em>Energy Economics</em>, 2023, 128: 107178
+                &nbsp;·&nbsp; <span class="tag-journal">SCI/SSCI Q1</span> <span class="tag-role tag-main">主要作者</span>
+              </p>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.eneco.2023.107178" target="_blank">DOI</a>
+          </li>
+
+          <li class="pub-entry">
+            <div class="pub-cover cover-gjjr">国际<br>金融</div>
+            <div class="pub-main">
+              <p class="pub-title">国际能源大变局下的中国能源定价权.</p>
+              <p class="pub-meta">刘阳, <strong>杨玉刚*</strong>, 韩立岩 &nbsp;·&nbsp; <em>国际金融</em>, 2023(05): 24–27
+                &nbsp;·&nbsp; <span class="tag-journal">AMI核心</span> <span class="tag-role tag-main">主要作者</span>
+              </p>
+            </div>
+          </li>
+
+        </ol>
+
+        <h3 class="pub-group-title" style="margin-top:1.5rem">工作论文</h3>
+        <ol class="pub-list">
+          <li class="pub-entry">
+            <div class="pub-main">
+              <p class="pub-title">Flexible Industry Policy under Political Incentives: the Hidden Cost of the Financial Crisis.</p>
+              <p class="pub-meta">刘阳, 李蕾, <strong>杨玉刚*</strong> &nbsp;·&nbsp; <span class="tag-role tag-corr">通讯作者</span></p>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-main">
+              <p class="pub-title">市场化改革、产业政策与可再生能源发展.</p>
+              <p class="pub-meta">刘阳, <strong>杨玉刚*</strong> &nbsp;·&nbsp; <span class="tag-role tag-corr">通讯作者</span></p>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-main">
+              <p class="pub-title">金融危机、环境污染与经济增长.</p>
+              <p class="pub-meta">李蕾, 刘阳, <strong>杨玉刚</strong></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="sec-title" data-en="Projects &amp; Reports" data-zh="科研项目">Projects &amp; Reports</h2>
+
+      <div class="lang-en">
+        <h3 class="pub-group-title">NSFC Funded Projects</h3>
+        <div class="proj-list">
+          <div class="proj-entry">
+            <span class="proj-num">72574221</span>
+            <div>
+              <p class="proj-title-text">Research on the Resilience of the New Energy Industry Chain under Trade Friction: Transmission Mechanism and Enhancement Strategies</p>
+              <p class="proj-meta">National Natural Science Foundation of China &nbsp;·&nbsp; Participant &nbsp;·&nbsp; 2025–2029</p>
+            </div>
+          </div>
+          <div class="proj-entry">
+            <span class="proj-num">72101254</span>
+            <div>
+              <p class="proj-title-text">RMB Pricing of New Energy and Its Impact on the Internationalization of RMB</p>
+              <p class="proj-meta">National Natural Science Foundation of China &nbsp;·&nbsp; Participant &nbsp;·&nbsp; 2022–2024</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="pub-group-title" style="margin-top:1.5rem">Research Reports &amp; Conferences</h3>
+        <table class="report-table">
+          <tr><td class="rt-year">2025</td><td>Design of peak and valley electricity pricing in Northwest China <span class="rt-org">· National Grid</span></td></tr>
+          <tr><td class="rt-year">2025</td><td>Price risk measurement and welfare impact of China's electricity spot market <span class="rt-org">· RUC</span></td></tr>
+          <tr><td class="rt-year">2024</td><td>Research on electricity market system and pricing adapting to the new power system <span class="rt-org">· NDRC</span></td></tr>
+          <tr><td class="rt-year">2023</td><td>Low-carbon awareness and energy consumption behavior of Chinese households <span class="rt-org">· RUC</span></td></tr>
+          <tr><td class="rt-year">2023</td><td>International Conference on Climate and Energy Finance <span class="rt-org">· Reporter</span></td></tr>
+        </table>
+      </div>
+
+      <div class="lang-zh" style="display:none">
+        <h3 class="pub-group-title">国家自然科学基金项目</h3>
+        <div class="proj-list">
+          <div class="proj-entry">
+            <span class="proj-num">72574221</span>
+            <div>
+              <p class="proj-title-text">贸易摩擦下新能源产业链韧性研究：传导机制与提升策略</p>
+              <p class="proj-meta">国家自然科学基金 &nbsp;·&nbsp; 参与 &nbsp;·&nbsp; 2025–2029</p>
+            </div>
+          </div>
+          <div class="proj-entry">
+            <span class="proj-num">72101254</span>
+            <div>
+              <p class="proj-title-text">新能源的人民币定价及对人民币国际化的影响</p>
+              <p class="proj-meta">国家自然科学基金（青年项目） &nbsp;·&nbsp; 参与 &nbsp;·&nbsp; 2022–2024</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="pub-group-title" style="margin-top:1.5rem">横向课题与研究报告</h3>
+        <table class="report-table">
+          <tr><td class="rt-year">2025</td><td>西北地区峰谷电价和丰枯电价设计 <span class="rt-org">· 国家电网</span></td></tr>
+          <tr><td class="rt-year">2025</td><td>中国电力现货市场的价格风险测度与福利影响 <span class="rt-org">· 人民大学</span></td></tr>
+          <tr><td class="rt-year">2024</td><td>新型电力系统建设背景下深化市场化电力改革重点问题研究 <span class="rt-org">· 国家发改委</span></td></tr>
+          <tr><td class="rt-year">2023</td><td>碳中和背景下中国家庭低碳意识与能源消费行为研究 <span class="rt-org">· 人民大学</span></td></tr>
+          <tr><td class="rt-year">2023</td><td>气候与能源金融国际会议 <span class="rt-org">· 汇报人</span></td></tr>
+        </table>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ELECTRICITY MARKET -->
+    <section id="electricity">
+      <h2 class="sec-title" data-en="Electricity Market Resources" data-zh="电力市场资源">Electricity Market Resources</h2>
+      <p class="sec-note lang-en">Explore China's electricity market reform — interactive province maps, spot price visualization, reform timeline and policy documents.</p>
+      <p class="sec-note lang-zh" style="display:none">探索中国电力市场改革全景 — 交互式省级地图、现货电价可视化、改革时间线与政策文件库。</p>
+
+      <a href="electricity.html" class="elec-banner">
+        <div class="elec-banner-inner">
+          <div class="elec-banner-icon">⚡</div>
+          <div class="elec-banner-body">
+            <p class="elec-banner-title lang-en">China Electricity Market Atlas</p>
+            <p class="elec-banner-title lang-zh" style="display:none">中国电力市场图集</p>
+            <p class="elec-banner-desc lang-en">Interactive choropleth map · Provincial spot prices · Reform timeline 2015–2030 · Policy document library by region</p>
+            <p class="elec-banner-desc lang-zh" style="display:none">各省现货电价交互地图 · 2015–2030改革时间线 · 按大区整理的政策文件库</p>
+            <div class="elec-banner-tags">
+              <span class="elec-banner-tag lang-en">21 Spot Market Provinces</span>
+              <span class="elec-banner-tag lang-zh" style="display:none">21省份现货市场</span>
+              <span class="elec-banner-tag lang-en">Dynamic Price Map</span>
+              <span class="elec-banner-tag lang-zh" style="display:none">动态电价地图</span>
+              <span class="elec-banner-tag lang-en">ECharts Visualization</span>
+              <span class="elec-banner-tag lang-zh" style="display:none">ECharts可视化</span>
+              <span class="elec-banner-tag lang-en">Policy Documents</span>
+              <span class="elec-banner-tag lang-zh" style="display:none">政策文件库</span>
+            </div>
+          </div>
+          <span class="elec-banner-btn" data-en="Explore →" data-zh="查看 →">Explore →</span>
+        </div>
+      </a>
+
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <h2 class="sec-title" data-en="Awards &amp; Activities" data-zh="荣誉奖励">Awards &amp; Activities</h2>
+
+      <div class="lang-en">
+        <h3 class="pub-group-title">Academic Scholarships</h3>
+        <table class="award-table">
+          <tr><td>National Scholarship</td><td class="award-note">Top 1% · RUC</td></tr>
+          <tr><td>Special Prize of Academic Scholarship</td><td class="award-note">Top 5% · Undergraduate</td></tr>
+          <tr><td>National Encouragement Scholarship</td><td class="award-note">Undergraduate</td></tr>
+          <tr><td>First-class Academic Scholarship</td><td class="award-note">Top 30% · Master</td></tr>
+          <tr><td>Merit Student</td><td class="award-note">Both Undergrad &amp; Master</td></tr>
+          <tr><td>Outstanding Youth League Member</td><td class="award-note">RUC</td></tr>
+        </table>
+
+        <h3 class="pub-group-title" style="margin-top:1.25rem">Competitions</h3>
+        <table class="award-table">
+          <tr><td>H Award, American Mathematical Modeling Competition</td><td class="award-note">Team Captain</td></tr>
+          <tr><td>2nd Prize, National University Mathematical Modeling Competition</td><td class="award-note">Team Captain</td></tr>
+          <tr><td>2nd Prize, National University Mathematics Competition</td><td class="award-note"></td></tr>
+          <tr><td>1st Prize, Beijing Mathematics Competition (Business &amp; Economics)</td><td class="award-note"></td></tr>
+          <tr><td>Municipal-level Innovation Project, University Innovation Fund</td><td class="award-note">Team Leader</td></tr>
+          <tr><td>2nd Prize, University Innovation Cup Essay Competition</td><td class="award-note"></td></tr>
+          <tr><td>2nd Prize, School "Jingshi Cup" Essay Competition</td><td class="award-note">Undergraduate</td></tr>
+        </table>
+
+        <h3 class="pub-group-title" style="margin-top:1.25rem">Leadership &amp; Service</h3>
+        <table class="award-table">
+          <tr><td>Head of Department, School Student Union</td><td class="award-note">Undergraduate</td></tr>
+          <tr><td>Freshman Academic Advisor</td><td class="award-note">Master</td></tr>
+          <tr><td>Temporary Party Branch Secretary</td><td class="award-note">Master</td></tr>
+        </table>
+      </div>
+
+      <div class="lang-zh" style="display:none">
+        <h3 class="pub-group-title">学习奖励</h3>
+        <table class="award-table">
+          <tr><td>国家奖学金</td><td class="award-note">人大前1%</td></tr>
+          <tr><td>学习优秀特等奖学金</td><td class="award-note">前5%，本科</td></tr>
+          <tr><td>国家励志奖学金</td><td class="award-note">本科</td></tr>
+          <tr><td>学业一等奖学金</td><td class="award-note">前30%，硕士</td></tr>
+          <tr><td>三好学生</td><td class="award-note">本硕均获得</td></tr>
+          <tr><td>优秀团员</td><td class="award-note">中国人民大学</td></tr>
+        </table>
+
+        <h3 class="pub-group-title" style="margin-top:1.25rem">竞赛获奖</h3>
+        <table class="award-table">
+          <tr><td>美国大学生数学建模比赛 H奖</td><td class="award-note">队长</td></tr>
+          <tr><td>全国大学生数学建模竞赛 二等奖</td><td class="award-note">队长</td></tr>
+          <tr><td>全国大学生数学竞赛 二等奖</td><td class="award-note"></td></tr>
+          <tr><td>北京市数学竞赛经管类 一等奖</td><td class="award-note"></td></tr>
+          <tr><td>学校大创项目市级立项并结项</td><td class="award-note">组长</td></tr>
+          <tr><td>学校创新杯论文比赛 二等奖</td><td class="award-note"></td></tr>
+          <tr><td>学院经世杯论文 二等奖</td><td class="award-note">本科</td></tr>
+        </table>
+
+        <h3 class="pub-group-title" style="margin-top:1.25rem">学生工作</h3>
+        <table class="award-table">
+          <tr><td>院学生会部长</td><td class="award-note">本科</td></tr>
+          <tr><td>新生辅导员</td><td class="award-note">硕士</td></tr>
+          <tr><td>临时党支部书记</td><td class="award-note">硕士</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- FOOTER inside content -->
+    <footer>
+      <p class="lang-en">© 2025 Yugang Yang &nbsp;·&nbsp; School of Applied Economics, Renmin University of China &nbsp;·&nbsp; <a href="mailto:yugangyang@ruc.edu.cn">yugangyang@ruc.edu.cn</a></p>
+      <p class="lang-zh" style="display:none">© 2025 杨玉刚 &nbsp;·&nbsp; 中国人民大学 应用经济学院 &nbsp;·&nbsp; <a href="mailto:yugangyang@ruc.edu.cn">yugangyang@ruc.edu.cn</a></p>
+    </footer>
+
+  </main>
+</div><!-- end layout -->
+
+<script>
+function setLang(lang) {
+  localStorage.setItem('lang', lang);
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  document.title = lang === 'zh' ? '杨玉刚 | 中国人民大学' : 'Yugang Yang | Renmin University of China';
+  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? '' : 'none');
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.zh;
+  });
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+}
+
+setLang(localStorage.getItem('lang') || 'en');
+
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 4);
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('nav-tabs').classList.remove('open');
+  });
+});
+
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('nav-tabs').classList.toggle('open');
+});
+
+// Active nav highlight
+const secs = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-tabs a');
+new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting)
+      navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+  });
+}, { threshold: 0.25, rootMargin: '-60px 0px 0px 0px' }).observe;
+secs.forEach(s => {
+  new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting)
+        navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { threshold: 0.2, rootMargin: '-60px 0px 0px 0px' }).observe(s);
+});
+</script>
+</body>
+</html>
